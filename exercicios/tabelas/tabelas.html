@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            
+        }
+        .verde{
+            background-color: green;
+        }
+        .branco{
+            background-color:white;
+        }
+        .vermelho{
+            background-color:red;
+        }
+        .titulo{
+            background-color:rgb(99, 214, 99);
+        }
+        .dados{
+            background-color: rgb(248, 135, 135);
+        }
+
+    </style>
+</head>
+<body>
+    <section>Tabela 01</section>
+    <table border='1px' cellspacing="0">
+        <thead>
+            <tr>
+                <th>nome</th>
+                <th> idade</th>
+                <th>Sexo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pedro</td>
+                <td>23</td>
+                <td>Masculino</td>
+            </tr>
+        
+        <tr> 
+            <td>Júlia</td> 
+            <td>30</td> 
+            <td>Feminio</td> 
+        </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h1> criando tabela com linha de título na vertical</h1>
+    <table border="1" cellspacing="0">
+
+        <tr> 
+            <th>Nome</th> <td>Pedro</td> <td>Júlia</td> 
+        </tr>
+        <tr> 
+            <th>Idade</th> <td>23</td> <td>30</td> 
+        </tr>
+        <tr> 
+            <th>Sexo</th> <td>Masculino</td> <td>Feminino</td>
+        </tr>
+    </table>
+    <!--Usamos as tags <thead> e <tbody> apenas para deixar nossa página mais organizada e semântica.  A aconcelhável não usar a tag <tfoot>, pois muitos browses não reconhecem essa tag.-->
+        <hr>
+        <h1>Criando células vazias</h1>
+        <p>para criar um célula vázia basta usar a entidade de espaço vazio que é &nbsp.</p>
+
+        <table border="1" cellspacing="0">
+           <tr>
+               <th>&nbsp</th> <th>valor</th>
+           </tr>
+           <tr>
+               <td>Item 1</td> <td>10reais</td>
+          </tr>
+           <tr>
+               <td>item 2</td> <td> 20 reais</td>
+          </tr>
+        </table>
+        <hr>
+        <h1>Criando células que abrangem mais de uma coluna ou linha</h1>
+        <p>Usamos dois atributos para criar célula  que ocupem mais de uma coluna ou linha, eles são o colspan e rowspan.</p>
+        <h2>Colspan="x"</h2>
+        <p>Usado para criar células que ocupam mais de uma coluna.</p>
+
+        <caption>Colspan</caption>
+        <table border="1" cellspacing="3">
+            <tr>
+                <th>nome</th> <th colspan="3">namoradas</th>
+            </tr>
+            <tr>
+                <td>Kyle</td> <td>Amanda</td> <td>Corollyne</td> <td>Anna</td> 
+            </tr>
+            <tr>
+                <td>Rafael</td> <td>Padricia</td> <td>Ravena</td> <td>&nbsp</td>
+            </tr>
+        </table >
+        <h2>Rowspan="x"</h2>
+        <p>Usado para criar células com mais de um epaço de linha.</p>
+        <caption>Rowspan</caption>
+
+        <table border="1" cellspacing="3">
+            <tr> 
+                <th>Primeiro nome</th> <td>Ted</td>
+            </tr>
+
+            <tr> <th rowspan="2"> Telefone</th> <td>xxxx-xxxx</td>
+            </tr>
+
+            <tr> 
+                <td>yyyy-yyyy</td> 
+            </tr>
+            <tr>
+                 <th>Idade</th> <td>23</td>
+            </tr>
+        </table>
+        <hr>
+        <h1>Aplicando Cores em uma tabela</h1>
+        <p>we can usa an alement called <em>colgroup</em> to create a group of collums, that way we can put colors in each collum individually. But we have to add another element: <em>col</em> one for each group´s collum. </p>
+
+        <table border="none">
+            <colgroup>
+                <col class="verde">
+                <col class="branco">
+                <col class="vermelho">
+            </colgroup>
+
+            <tr>
+                <th> nome</th><th> idade</th><th> sexo </th>
+            </tr>
+            <tr>
+                <td>Carlos</td><td>23</td> <td>marculino</td>
+            </tr>
+            <tr>
+                <td>carol</td><td>30</td><td>feminino</td>
+            </tr>
+        </table>
+        <h2>Colorindo duas ou mais colunas com a mesma cor corretamente</h2>
+        <p>Para isso usamos o atributo <em>span="x"</em> no elemento <em>col</em> da coluna que começa a cor que voçe deseja, sendo <u>o "x" o valor que representa a quatidade de colunas que vai ter aquela cor</u>.</p>
+
+        <table border="none">
+            <colgroup>
+                <col class="titulo">
+                <col class="dados" span="2">
+
+            </colgroup>
+            <tr> <th>Nome</th> <td>Pedro</td> <td>Maria</td> </tr>
+            <tr> <th>Idade</th> <td>23</td> <td>30</td> </tr>
+            <tr> <th>Sexo</th> <td>Masculino</td> <td>Feminino</td> </tr>
+        </table>
+
+</body>
+</html>
