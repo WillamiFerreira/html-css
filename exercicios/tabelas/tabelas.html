@@ -24,14 +24,20 @@
         .dados{
             background-color: rgb(248, 135, 135);
         }
-        table{
+        .numero{
+            text-align: right;
+        }
+        table {
             border-collapse: collapse;
             width:350px;
         }
         table td, th {
             border: 1px solid black;
             margin:0px;
+            text-align:center;
+            vertical-align: middle;
         }
+
 
     </style>
 </head>
@@ -159,6 +165,22 @@
             <tr> <th>Nome</th> <td>Pedro</td> <td>Maria</td> </tr>
             <tr> <th>Idade</th> <td>23</td> <td>30</td> </tr>
             <tr> <th>Sexo</th> <td>Masculino</td> <td>Feminino</td> </tr>
+        </table>
+        <hr>
+        <h1>Personalizando células com classes.</h1>
+        <p>Nesse caso, criei uma class chamada <em>numero</em> e a propriedade text-alight: right, assim posso colocar um conteúdo número para o lado direito da célula. Isso não é obrigatória, mas meramente estético.</p>
+        <table>
+            <thead>
+                <tr> <th>Nome</th> <th>sexo</th> <th>idade</th> </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Gabriela</td> <td>feminino</td> <td class="numero">14</td>
+                </tr>
+                <tr>
+                    <td>joão</td> <td>masculino</td> <td class="numero">30</td>
+                </tr>
+            </tbody>
         </table>
 
 </body>
