@@ -12,13 +12,19 @@
         table{
            border-collapse: collapse;
            width:400px;
+           position:relative;
         }
         table th, td {
             border:1px solid black;
             padding:3px;
+            height: 30px;
+        }
+        table > thead > tr > th {
+            position:sticky;
+            top:0;
         }
         table  th {
-            background-color: rgb(100, 100, 100);
+            background-color: rgb(82, 82, 82);
             font-weight: bold;
             padding:8px;
             color:rgb(255, 255, 255);
@@ -70,6 +76,21 @@
         <tfoot>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit et repudiandae nemo, quia recusandae maxime quo labore nesciunt alias soluta ex amet eaque dolorem animi ipsam cum eius voluptatum voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae obcaecati perferendis earum iusto, praesentium ad eius, et animi, similique sapiente eligendi omnis? Laboriosam laborum explicabo reiciendis, minus alias incidunt. Labore. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem reiciendis recusandae minus maiores, officiis quo rerum commodi, error accusantium impedit expedita veniam iure, neque beatae iusto laudantium voluptatibus unde quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dolores fuga cupiditate optio, blanditiis autem repudiandae error quos pariatur adipisci nisi officiis provident quia ipsum expedita magni animi! Explicabo, officia!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit et repudiandae nemo, quia recusandae maxime quo labore nesciunt alias soluta ex amet eaque dolorem animi ipsam cum eius voluptatum voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae obcaecati perferendis earum iusto, praesentium ad eius, et animi, similique sapiente eligendi omnis? Laboriosam laborum explicabo reiciendis, minus alias incidunt. Labore. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem reiciendis recusandae minus maiores, officiis quo rerum commodi, error accusantium impedit expedita veniam iure, neque beatae iusto laudantium voluptatibus unde quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dolores fuga cupiditate optio, blanditiis autem repudiandae error quos pariatur adipisci nisi officiis provident quia ipsum expedita magni animi! Explicabo, officia!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit et repudiandae nemo, quia recusandae maxime quo labore nesciunt alias soluta ex amet eaque dolorem animi ipsam cum eius voluptatum voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae obcaecati perferendis earum iusto, praesentium ad eius, et animi, similique sapiente eligendi omnis? Laboriosam laborum explicabo reiciendis, minus alias incidunt. Labore. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem reiciendis recusandae minus maiores, officiis quo rerum commodi, error accusantium impedit expedita veniam iure, neque beatae iusto laudantium voluptatibus unde quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dolores fuga cupiditate optio, blanditiis autem repudiandae error quos pariatur adipisci nisi officiis provident quia ipsum expedita magni animi! Explicabo, officia!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit et repudiandae nemo, quia recusandae maxime quo labore nesciunt alias soluta ex amet eaque dolorem animi ipsam cum eius voluptatum voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae obcaecati perferendis earum iusto, praesentium ad eius, et animi, similique sapiente eligendi omnis? Laboriosam laborum explicabo reiciendis, minus alias incidunt. Labore. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem reiciendis recusandae minus maiores, officiis quo rerum commodi, error accusantium impedit expedita veniam iure, neque beatae iusto laudantium voluptatibus unde quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dolores fuga cupiditate optio, blanditiis autem repudiandae error quos pariatur adipisci nisi officiis provident quia ipsum expedita magni animi! Explicabo, officia!</p>
+    <hr>
+    <h1>
+        Treinando um pouco mais de colspan e rowspan (expanção de células)</h1>
+        <p>Podemos facilmente expandir a largura ou altura de uma célula usando os atributos colspan ou rowspan</p>
+        <table>
+            <tr><th colspan="2">A</th></tr>
+            <tr><th rowspan="3">C</th> <th>D</th></tr> 
+            <tr> <th>F</th></tr> 
+            <tr> <th>H</th></tr> 
+            <tr><th colspan="2">I</th></tr> 
+        </table>
     
 </body>
 </html>
