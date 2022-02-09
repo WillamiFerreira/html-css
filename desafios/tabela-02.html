@@ -5,13 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse:collapse;
+            width:500px;
+        }
+        table > thead, tbody > tr > th, td{
+            border: 1px solid black;
+            height: 30px;
+            text-align: center;
+        }
+        table tr.table {
+            background-color: gray;
+            color:white;
+
+        }
+    </style>
 </head>
 <body>
     <table>
         <thead>
-            <tr> <th rowspan="2">1</th> <th rowspan="2">2</th> <th>3</th> <th rowspan="2">4</th> </tr>
-            
+            <tr class="table"> <th rowspan="2" scope="col">Área</th> <th rowspan="2" scope="col">Diciplina</th> <th colspan="2" scope="colgroup">nota</th> <th rowspan="2" scope="col">Média</th> </tr>
+            <tr class="table"><th scope="col">Nota 1</th> <th scope="col">Nota 2</th></tr> 
         </thead>
+        
+            <tbody>
+                <tr> <th rowspan="4" scope="rowgroup">Exatas</th> <td>matemática</td> <td>7</td> <td>8</td> <td>n</td> </tr>
+                <tr> <td>Física</td> <td>0.0</td> <td>0.0</td> <td>0.0</td> </tr>
+                <tr><td>química</td> <td>0.0</td> <td>0.0</td><td>0.0</td>  </tr>
+                <tr> <td>Biologia</td> <td>0.0</td> <td>0.0</td> <td>0.0</td></tr>
+                <tr class="table"> <th colspan="4" scope="row">Médias de Exatas</th> <td>0.0</td> </tr>
+                <tr> <th rowspan="2" scope="rowgroup">Humanas</th> <td>História</td> <td>0.0</td> <td>0.o</td> <td>0.0</td> </tr>
+                <tr> <td>Geografia</td> <td>0.0</td> <td>0.0</td> <td>0.0</td></tr>
+                <tr class="table"><th colspan="4" scope="row">Média de Humanas</th> <td>0.0</td></tr>
+            </tbody>
     </table>
     
 </body>
