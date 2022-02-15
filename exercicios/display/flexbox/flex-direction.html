@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-direction</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;}
+        
+        p{text-indent: 20px;}
+        div.flex-counteiner{
+            display: flex;
+            flex-direction:row;
+        }
+        div.flex-item{
+            width:20vw;
+            height: 30vh;
+        }
+        div.item-01{
+            background-color: red;
+        }
+        div.item-02{
+            background-color: rgb(9, 255, 0);
+        }
+        div.item-03{
+            background-color: rgb(116, 66, 255);
+        }
+
+        div.flex-counteiner-row-reverse{
+            display: flex;
+            flex-direction: row-reverse;
+
+        }
+        div.flex-counteiner-colomn{
+            display: flex;
+            flex-direction: column;
+        }
+        div.flex-counteiner-colomn-reverse{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    </style>
+</head>
+<body>
+    <h1>Propriedade: Flex-direction</h1>
+    <p>A propriedade flex-direction é usada para mudar a direção em que os flex-itens estão dispostos dentro do pai. Ela tem três valores: <mark>row, row-reverse, column e column-reverse</mark>.</p>
+    <h2>Row</h2>
+    <p>O valor row é o valor padrão é posiciona os flex-itens na horizontal e no sentido start-end.</p>
+    
+    <div class="flex-counteiner">
+        <div class="flex-item item-01"></div>
+        <div class="flex-item item-02"></div>
+        <div class="flex-item item-03"></div>
+    </div>
+    <hr>
+    <h2>Row-reverse</h2>
+    <p>Esse valor posiciona os flex-itens na horizontal e no sentido end-start.</p>
+   <div class="flex-counteiner-row-reverse">
+        <div class="flex-item item-01"></div>
+        <div class="flex-item item-02"></div>
+        <div class="flex-item item-03"></div>
+   </div>
+   <hr>
+   <h2>Column</h2>
+   <p>Column  deixa os flex-items na vertical e no sentido start-end</p>
+   <div class="flex-counteiner-colomn">
+        <div class="flex-item item-01"></div>
+        <div class="flex-item item-02"></div>
+        <div class="flex-item item-03"></div>
+   </div>
+   <hr>
+   <h2>Column-reverse</h2>
+   <p>O valor <em>Column-reverse</em> deixa os flex-itens na vertica e com sentido end-start.</p>
+   <div class="flex-counteiner-colomn-reverse">
+    <div class="flex-item item-01"></div>
+    <div class="flex-item item-02"></div>
+    <div class="flex-item item-03"></div>
+</div>
+
+<hr>
+</body>
+</html>
