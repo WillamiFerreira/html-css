@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display: Inline</title>
+    <style>
+        div.counteiner{
+            color:white;
+            font-size: 2em;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            /*div pai, onde as divis com inline ficam*/
+        }
+
+        div.item{
+            width:200px;/*Largura e altura não é necessário nesses itens pois eles estão com display inline, o que faz com que os mesmo tenham comportamento de palavra, onde width e height não são aplicados. Porém vou deixar aqui*/
+            height:100px;
+            display: inline;
+        }
+        div.item1{
+            background-color: rgb(235, 161, 65);
+        }
+        div.item2{
+            background-color: coral;
+        }
+        div.item3{
+            background-color: hotpink;
+        }
+
+        div.counteiner02{
+            background-color: white;
+            color:rgb(255, 255, 255);
+            font-size: 2em;
+            text-align: center;
+        }
+        div.inline-item{
+            display: inline;
+        }
+        div.inline-item1{
+            background-color: red;
+        }
+        div.inline-item2{
+            background-color: green;
+        }
+        div.inline-item3{
+            background-color: blue;
+        }
+        div.counteiner03{
+            color:white;
+            font-family: arial;
+            text-align: center;
+            margin:5px;
+        }
+        div.itemv3{
+            display:inline;
+            font-size: 2em;
+            padding: 3px;
+
+        }
+        .item-inline001{
+            background-color: blueviolet;
+        }
+        .item-inline002{
+            background-color: rgb(43, 226, 43);
+        }
+        .item-inline003{
+            background-color: rgb(226, 116, 43);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="counteiner">
+        <div class="item item1"> Primeiro</div><!--
+        --><div class="item item2">Segundo</div><!--
+        --><div class="item item3">Terceiro</div>
+        <!--como esses item estão com display inline e portanto comportamento de palavras, dentre uma e outra é aplicado um espaço, para retirar esses espaços podems usar uma ganbiarra de colocar comentários vazios no lugar dos espaços, pois o browser simplismente os ignora.-->
+    </div>
+
+    <div class="counteiner02">
+        <div class="inline-item inline-item1">Primeiro</div>
+        <div class=" inline-item inline-item2">Segundo</div>
+        <div class=" inline-item inline-item3">Terceiro</div>
+    </div>
+
+    <div class="counteiner03">
+        <div class="itemv3 item-inline001">text01</div><!--
+        --><div class="itemv3 item-inline002">text02</div><!--
+        --><div class="itemv3 item-inline003">text03</div>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display-flex</title>
+    <style>
+        .flex-counteiner{
+            width: 80vw;
+            margin: auto;
+            background-color: grey;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+        }
+        .card{
+            background-color: rgb(255, 37, 37);
+            margin:5px;
+        }
+        .flex-item{
+            height: 200px;
+            width: 120px;
+            flex:0 1 25%;
+
+        }
+    </style>
+</head>
+<body>
+    <section class="flex-counteiner">
+        <div class="card flex-item"> card1</div>
+        <div class="card flex-item"> card2</div>
+        <div class="card flex-item"> card3</div>
+        <div class="card flex-item"> card4</div>
+        <div class="card flex-item"> card5</div>
+        <div class="card flex-item"> card6</div>
+        <div class="card flex-item"> card7</div>
+        <div class="card flex-item"> card8</div>
+        <div class="card flex-item"> card9</div>
+        <div class="card flex-item"> card10</div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inline-block</title>
+    <style>
+        div.counteiner{
+            color:white;
+            font-size: 2em;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        div.item{
+            display:inline-block;
+            width:30%;
+            height:150px;
+
+        }
+        div.item1{
+            background-color: rgb(235, 161, 65);
+        }
+        div.item2{
+            background-color: coral;
+        }
+        div.item3{
+            background-color: hotpink;
+        }
+        div.last-line{
+            background-color: grey;
+        }
+        div.countainer02{
+            display: block;
+        }
+        div.ib-item{
+            display: inline-block;
+            width: 300px;
+            height: 200px;
+            border: 1px solid black;
+        }
+        div.item01{
+            background-color: red;
+        }
+        div.item02{
+            background-color: rgb(72, 255, 0);
+        }
+        div.item03{
+            background-color: rgb(98, 0, 255);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="counteiner">
+        <div class="item item1">Primeiro</div><!--
+        --><div class="item item2">Segundo</div><!--
+        --><div class="item item3">Terceiro</div><!--
+        --><div class=" item last-line">texto</div>
+    </div>
+
+    <div class="countainer02">
+        <div class="ib-item item01"></div>
+        <div class="ib-item item02"></div>
+        <div class="ib-item item03"></div>
+
+    </div>
+  
+</body>
+</html>
