@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align-itens</title>
+    <style>
+        body{font-family: Arial, Helvetica, sans-serif;}
+        div.flex-item{
+            width: 20vw;
+            border-radius: 10px;
+            margin:2.5px;
+            text-align: center;
+        }
+        .item-01{
+            background-color:#040204 ;
+            height: 30vh;
+        }
+        .item-02{
+            background-color: #DCB67C;
+            height: 40vh;
+        }
+        .item-03{
+            background-color: #635C4A;
+            height: 20vh;
+        }
+        .item-04{
+            background-color: #370C01;
+            height: 50vh;
+
+            
+        }
+        div.flex-counteiner-start{
+            display: flex;
+            align-items:flex-start;
+            border: 2px solid red;
+            border-radius: 10px;
+        }
+        div.flex-counteiner-stretch{
+            display: flex;
+            align-items:stretch;
+            border: 2px solid red;
+            border-radius: 10px;
+        }
+        div.flex-counteiner-center{
+            display: flex;
+            align-items:center;
+            border: 2px solid red;
+            border-radius: 10px;
+        }
+        div.flex-counteiner-baseline{
+            display: flex;
+            align-items:baseline;
+            border: 2px solid red;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Aligh-itens</h1>
+    <p>propriedade que define o alinhamento dos itens no eixo transversal; seus valores são flex-star, flex-end, center, strech e baseline.</p>
+    <h2>Flex-start/ start/ self-start</h2>
+    <p></p>
+    <div class="flex-counteiner-start">
+        <div class="flex-item item-01"></div>
+        <div class="flex-item item-02"></div>
+        <div class="flex-item item-03"></div>
+        <div class="flex-item item-04"></div>
+    </div>
+    <hr>
+    <h2>Stretch</h2>
+    <p>valor padrão</p>
+    <div class="flex-counteiner-stretch">
+        <div class="flex-item item-01"></div>
+        <div class="flex-item item-02"></div>
+        <div class="flex-item item-03"></div>
+        <div class="flex-item item-04"></div>
+    </div>
+    <hr>
+    <h2>center</h2>
+    <p>deixam os itens alinhados no eixo transversal</p>
+    <div class="flex-counteiner-center">
+        <div class="flex-item item-01"></div>
+        <div class="flex-item item-02"></div>
+        <div class="flex-item item-03"></div>
+        <div class="flex-item item-04"></div>
+    </div>
+    <hr>
+    <h2>Baseline</h2>
+    <p>Os items ficam alinhados de acordo com suas bases lines. Estudar mais isso.</p>
+    <div class="flex-counteiner-baseline">
+        <div class="flex-item item-01">texto 01</div>
+        <div class="flex-item item-02">texto 02</div>
+        <div class="flex-item item-03">texto 03</div>
+        <div class="flex-item item-04">texto 04</div>
+
+    
+</body>
+</html>

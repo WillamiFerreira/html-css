@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify-content</title>
+    <style>
+        body{font-family: Helvetica, sans-serif;}
+        div.flex-counteiner{
+            display: flex;
+            justify-content: flex-start;/*valor padrão*/
+            border: 2px solid red;
+            border-radius: 10px;
+            flex-direction: row;
+        }
+        div.flex-item{
+            width:20vw;
+            height:30vh;
+            margin: 2.5px;
+            border-radius: 10px;
+        }
+        .item-01{
+            background-color:#1962FC;
+        }
+        .item-02{
+            background-color: #25D8F7;
+        }
+        .item-03{
+            background-color: #16E0C8;
+        }
+        .item-04{
+            background-color: #19FCA0;
+        }
+        div.flex-counteiner-end{
+            display: flex;
+            justify-content: flex-end;
+            border:2px solid red;
+            border-radius: 10px;
+            flex-direction: row;
+        }
+        div.flex-counteiner-center{
+            display: flex;
+            justify-content:center;
+            border: 2px solid red;
+            border-radius: 10px;
+
+        }
+        div.flex-counteiner-space-between{
+            display: flex;
+            justify-content:space-between;
+            border: 2px solid red;
+            border-radius: 10px;
+        }
+        div.flex-counteiner-space-around{
+            display: flex;
+            justify-content:space-around;
+            border: 2px solid red;
+            border-radius: 10px;
+        }
+        
+        div.flex-counteiner-space-evenly{
+            display: flex;
+            justify-content:space-evenly;
+            border: 2px solid red;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Propriedade justify-Content</h1>
+    <p>Essa propriedade nos permite organizar melhor os flex-itens ao longo do eixo principal do counteiner, por padrão seu valor é <em>flex-start</em>, mas pode ser mudado para outros como flex-end, star, end, left, right, center, space-between, space-around e space-ecenly. </p>
+    <h2>Flex-start</h2>
+    <p>Alinha os itens na bordar de inicio do counteiner, lenbrando que a borda de inicio pode ser auterada com a propriedade flex-direction</p>
+    <div class="flex-counteiner">
+        <div class="flex-item item-01"></div>
+        <div class="flex-item item-02"></div>
+        <div class="flex-item item-03"></div>
+        <div class="flex-item item-04"></div>
+    </div>
+    <hr>
+    <h2>Flex-end</h2>
+    <p>Basicamente a mesma ideia do flex-start, porém os itens são alinhados a partir a borda final, definido pelo flex-direction.</p>
+    <div class="flex-counteiner-end">
+        <div class="flex-item item-01"></div>
+        <div class="flex-item item-02"></div>
+        <div class="flex-item item-03"></div>
+        <div class="flex-item item-04"></div>
+    </div>
+    <hr>
+    <h2>Center</h2>
+    <p>Todos os elementos ficam ao centro do counteiner.</p>
+    <div class="flex-counteiner-center">
+        <div class="flex-item item-01"></div>
+        <div class="flex-item item-02"></div>
+        <div class="flex-item item-03"></div>
+        <div class="flex-item item-04"></div>
+    </div>
+    <hr>
+    <h2>space-between</h2>
+    <p>Esse valor destribui os item com um espaço igual entre eles, sempre com o primeiro junto à borda de incio e o último à borda final.</p>
+    <div class="flex-counteiner-space-between">
+        <div class="flex-item item-01"></div>
+        <div class="flex-item item-02"></div>
+        <div class="flex-item item-03"></div>
+        <div class="flex-item item-04"></div>
+    </div>
+    <hr>
+    <h2>Space-Around</h2>
+    <p>Valor que destribui o espaço restante entre nas bordas de cada item, isso faz com que o espaço entre itens e o espaço entre as bordas e o primeiro e último item sejam diferentes.</p>
+    <div class="flex-counteiner-space-around">
+        <div class="flex-item item-01"></div>
+        <div class="flex-item item-02"></div>
+        <div class="flex-item item-03"></div>
+        <div class="flex-item item-04"></div>
+    </div>
+    <hr>
+    <h2>Space-evenly</h2>
+    <p>Elemento que distribue o espaço restante ingualmente entre os próprios itens e as bordas.</p>
+    <div class="flex-counteiner-space-evenly">
+        <div class="flex-item item-01"></div>
+        <div class="flex-item item-02"></div>
+        <div class="flex-item item-03"></div>
+        <div class="flex-item item-04"></div>
+    </div>
+</body>
+</html>
