@@ -5,8 +5,197 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aling-content</title>
+    <style>
+        body{font-family: Arial, Helvetica, sans-serif;}
+        div.flex-item{
+            display: flex;
+            width:18vw;
+            border:2px solid black;
+            align-items: center;
+            justify-content: center; }
+
+            div.flex-item-height{
+            display: flex;
+            width:18vw;
+            height: 30vh;
+            border:2px solid black;
+            align-items: center;
+            justify-content: center; }
+
+
+
+        div.flex-counteiner{
+            display: flex;
+            padding:5px;
+            border-radius: 10px;
+            border: 2px solid red;
+            height: 100vh;/*Tive que colocar uma autura no counteiner, pois os itens não tem altura, e isso faz com que o counteiner fique com a altura dos números dentro dos itens.*/
+            flex-wrap: wrap;
+            align-items: stretch;
+
+            
+        }
+        div.flex-counteiner-flex-start-start{
+            display: flex;
+            align-content: flex-start;
+            flex-wrap: wrap;
+            border: 2px solid red;
+            padding: 5px;
+            height: 800px;
+            border-radius: 10px;
+        }
+        div.flex-counteiner-flex-end-end{
+            display: flex;
+            align-content: flex-end;
+            flex-wrap: wrap;
+            border: 2px solid red;
+            padding: 5px;
+            height: 800px;
+            border-radius: 10px;
+        }
+        div.flex-counteiner-space-between{
+            display: flex;
+            align-content:space-between;
+            flex-wrap: wrap;
+            border: 2px solid red;
+            padding: 5px;
+            height: 800px;
+            border-radius: 10px;
+
+        }
+        div.flex-counteiner-space-around{
+            display: flex;
+            align-content:space-around;
+            flex-wrap: wrap;
+            border: 2px solid red;
+            padding: 5px;
+            height: 800px;
+            border-radius: 10px;
+        }
+        div.flex-counteiner-evenly{
+            display: flex;
+            align-content:space-evenly;
+            flex-wrap: wrap;
+            border: 2px solid red;
+            padding: 5px;
+            height: 800px;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Align-content</h1>
+    <p>Organiza as linhas quando há espaço entre elas. similar ao justify-content, porém no eixo transversal. Seus valores são <u>stretch, star/flex-start, end/flex-end,center, space-betweew, space-around, space-evenly.</u> </p>
+    <div class="flex-counteiner">
+        <div class="flex-item"></div>
+        <div class="flex-item"></div>
+        <div class="flex-item"></div>
+        <div class="flex-item"></div>
+        <div class="flex-item"></div>
+        <div class="flex-item">6</div>
+        <div class="flex-item">7</div>
+        <div class="flex-item">8</div>
+        <div class="flex-item">9</div>
+        <div class="flex-item">10</div>
+        <div class="flex-item">11</div>
+        <div class="flex-item">12</div>
+        <div class="flex-item">13</div>
+        <div class="flex-item">14</div>
+    </div>
+    <hr>
+    <h2>Flex-start e Start</h2>
+    <p>Aloca as linhas a partir da borda start. O flex-star tem como base para saber qual borda é a start o flex-direction e o start, o writting-mode</p>
+    <div class="flex-counteiner-flex-start-start">
+        <div class="flex-item flex-item-height"></div>
+        <div class="flex-item flex-item-height"></div>
+        <div class="flex-item flex-item-height"></div>
+        <div class="flex-item flex-item-height"></div>
+        <div class="flex-item flex-item-height"></div>
+        <div class="flex-item flex-item-height">6</div>
+        <div class="flex-item flex-item-height">7</div>
+        <div class="flex-item flex-item-height">8</div>
+        <div class="flex-item flex-item-height">9</div>
+        <div class="flex-item flex-item-height">10</div>
+        <div class="flex-item flex-item-height">11</div>
+        <div class="flex-item flex-item-height">12</div>
+        <div class="flex-item flex-item-height">13</div>
+        <div class="flex-item flex-item-height">14</div>
+    </div>
+    <hr>
+    <h2>flex-end e end</h2>
+    <p>basicamente a mesma ideia do flex-star e start, porém as linhas são alinhadas a partir da borda final.</p>
+    <div class="flex-counteiner-flex-end-end">
+        <div class="flex-item flex-item-height"></div>
+        <div class="flex-item flex-item-height"></div>
+        <div class="flex-item flex-item-height"></div>
+        <div class="flex-item flex-item-height"></div>
+        <div class="flex-item flex-item-height"></div>
+        <div class="flex-item flex-item-height">6</div>
+        <div class="flex-item flex-item-height">7</div>
+        <div class="flex-item flex-item-height">8</div>
+        <div class="flex-item flex-item-height">9</div>
+        <div class="flex-item flex-item-height">10</div>
+        <div class="flex-item flex-item-height">11</div>
+        <div class="flex-item flex-item-height">12</div>
+        <div class="flex-item flex-item-height">13</div>
+        <div class="flex-item flex-item-height">14</div>
+    </div>
+    <hr>
+    <h2>Space-between</h2>
+    <p>Gruda linhas as duas bordas e distribui os outros igualmente no centro.</p>
+    <div class="flex-counteiner-space-between">
+        <div class="flex-item flex-item-height"></div>
+        <div class="flex-item flex-item-height"></div>
+        <div class="flex-item flex-item-height"></div>
+        <div class="flex-item flex-item-height"></div>
+        <div class="flex-item flex-item-height"></div>
+        <div class="flex-item flex-item-height">6</div>
+        <div class="flex-item flex-item-height">7</div>
+        <div class="flex-item flex-item-height">8</div>
+        <div class="flex-item flex-item-height">9</div>
+        <div class="flex-item flex-item-height">10</div>
+        <div class="flex-item flex-item-height">11</div>
+        <div class="flex-item flex-item-height">12</div>
+        <div class="flex-item flex-item-height">13</div>
+        <div class="flex-item flex-item-height">14</div>
+    </div>
+    <hr>
+    <h2>Space-around</h2>
+    <p>divide o espaço restante de forma igual entre as duas bordas (superior e inferior).</p>
+    <div class="flex-counteiner-space-around">
+        <div class="flex-item flex-item-height"></div>
+        <div class="flex-item flex-item-height"></div>
+        <div class="flex-item flex-item-height"></div>
+        <div class="flex-item flex-item-height"></div>
+        <div class="flex-item flex-item-height"></div>
+        <div class="flex-item flex-item-height">6</div>
+        <div class="flex-item flex-item-height">7</div>
+        <div class="flex-item flex-item-height">8</div>
+        <div class="flex-item flex-item-height">9</div>
+        <div class="flex-item flex-item-height">10</div>
+        <div class="flex-item flex-item-height">11</div>
+        <div class="flex-item flex-item-height">12</div>
+        <div class="flex-item flex-item-height">13</div>
+        <div class="flex-item flex-item-height">14</div>
+    </div>
+    <hr>
+    <h2>Space-evenly</h2>
+    <p>Aplica um espaço igual entre as próprias linhas e bordas do conunteier.</p>
+    <div class="flex-counteiner-evenly">
+        <div class="flex-item flex-item-height"></div>
+        <div class="flex-item flex-item-height"></div>
+        <div class="flex-item flex-item-height"></div>
+        <div class="flex-item flex-item-height"></div>
+        <div class="flex-item flex-item-height"></div>
+        <div class="flex-item flex-item-height">6</div>
+        <div class="flex-item flex-item-height">7</div>
+        <div class="flex-item flex-item-height">8</div>
+        <div class="flex-item flex-item-height">9</div>
+        <div class="flex-item flex-item-height">10</div>
+        <div class="flex-item flex-item-height">11</div>
+        <div class="flex-item flex-item-height">12</div>
+        <div class="flex-item flex-item-height">13</div>
+        <div class="flex-item flex-item-height">14</div>
+    </div>
 </body>
 </html>
