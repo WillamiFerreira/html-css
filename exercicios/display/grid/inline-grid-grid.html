@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inline-grid e grid</title>
+    <style>
+        div.inline-gridcounteiner{
+            display: inline-grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+        .box{
+            width: 32vw;
+            height: 33.3vh ;
+            border: 1px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <article>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quisquam quasi pariatur nulla, maiores ut quaerat, velit architecto autem a enim odio nesciunt eligendi cum ipsam possimus fugit libero aliquam.</p>
+        <div class="inline-gridcounteiner">
+            <div class="box item-01"></div>
+            <div class="box item-02"></div>
+            <div class="box item-03"></div>
+            <div class="box item-04"></div>
+            <div class="box item-05"></div>
+            <div class="box item-06"></div>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam accusamus voluptatibus hic! Earum, tempora sapiente! Nobis molestiae corporis facilis, aliquid error ab! Eligendi, nobis quia veniam corporis nulla architecto ex.</p>
+    </article>
+    
+</body>
+</html>
