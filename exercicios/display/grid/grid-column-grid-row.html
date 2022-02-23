@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-column e grid-row</title>
+    <style>
+        body{font-family: Arial, Helvetica, sans-serif;}
+        div.counteiner{
+            display: grid;
+            width: 96vw;
+            height: 500px;
+            gap:5px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows:repeat(6, 1fr);
+        }
+        .box{
+            background-color: aqua;
+        }
+        .item1{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-color: red;
+        }
+        .item4{
+            background-color: aquamarine;
+           grid-column-start: 2; /*Meio redundante essa, pois esse item ja tinha inicio na grid line vertical 2*/
+           grid-column-end: 4;
+        }
+        .item3{
+            background-color: blueviolet;
+            grid-row-start: 2;/*o item já estava na linha horizontal 2*/
+            grid-row-end: 5;
+
+        } /*Usando a shorthand*/
+        .item5{
+            background-color: darkgoldenrod;
+            grid-column: 1/3; /**/
+        }
+        .item6{
+            background-color: orangered;
+            grid-row-start:3;
+            grid-row-end:5;/*podemos reduzir essas 4 propriedades em apenas 2: grid-row e grid-column*/
+            grid-column-start: 2;
+            grid-column-end:4;
+            /*Nesse item eu apliquei grid-column e grid-row ao mesmo tempo*/
+        }
+
+    </style>
+</head>
+<body>
+    <h1>grid-column e grid-row</h1>
+    <p>Primeiramente temos que saber que essas duas propriedades são shorthands, cada uma para duas outras propriedades.</p>
+    <p> <strong>grid-column</strong> é Shorthand para <u>grid-cloumn-start e grid-column-end</u>. Elas determinam o inicio e fim (largura), baseado nas grid-lines verticais(por isso o column), lembrando que o valor máximo para a grid-column-start é o número total de grid lines verticais, de varia com a quantidade de colunas.</p>
+
+    <p><strong>Grid-row</strong> é shorthand para grid-row-start e grid-row-end, que determinan a altura das céluas, baseadas nas grid-lines horizontais, por isso o row.</p>
+
+    <div class="counteiner">
+        <div class="box item1">item 01</div>
+        <div class="box item2">item 02</div>
+        <div class="box item3">item 03</div>
+        <div class="box item4">item 04</div>
+        <div class="box item5">item 05</div>
+        <div class="box item6">item 06</div>
+        <div class="box">item 07</div>
+        <div class="box">item 08</div>
+        <div class="box">item 09</div>
+
+    </div>
+    <aside>Quando o espaço máximo do counteiner for atingido por causa esse alongamento dos itens, os outros vão simplemente quebrar para as linas de baixo; caso elas não existam, esses itens "puxados para baixo" simplismente não vão renderizar, a menos que tenha alguma coisa dentro.</aside>
+    <p>Existe uma forma alternativa para fazer esse mesmo resultado, que é usando a chorthand grid-area, aqui uma <a href="grid-area.html">página de exemplo</a></p>
+
+    
+</body>
+</html>

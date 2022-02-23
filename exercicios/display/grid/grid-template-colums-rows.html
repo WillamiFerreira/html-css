@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{font-family: Arial, Helvetica, sans-serif;}
+        div.counteiner{
+            display: grid;
+            width: 96vw;
+            height: 100vh;
+            gap: 5px;
+            grid-template-columns: 1fr 3fr 2fr; /*Pode ser usados várias unidades de medida, mas o melhor a fr*/
+            grid-template-rows: 10% 2fr 5fr 50px;
+
+        }
+        .box{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>As propriedades Grid-tamplate-rows/columns</h1>
+    <p>Aplicamos essas duas propriedades ao counteiner pai, o que determina a quantidadede de linhas e colunas vai ter o grid, consequentimente será determinado a largura e altura dos filhos se baseando na largura e dimenções do counteiner pai.</p>
+    <div class="counteiner">
+        <div class="box">texto</div>
+        <div class="box">texto</div>
+        <div class="box">texto</div>
+        <div class="box">texto</div>
+        <div class="box">texto</div>
+        <div class="box">texto</div>
+        <div class="box">texto</div>
+        <div class="box">texto</div>
+        <div class="box">texto</div>
+        <div class="box">texto</div>
+        <div class="box">texto</div>
+        <div class="box">texto</div>
+    </div>
+</body>
+</html>

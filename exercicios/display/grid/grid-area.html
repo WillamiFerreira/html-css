@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-area e Grid-template-area</title>
+    <style>
+        body{font-family: Arial, Helvetica, sans-serif;}
+        .counteiner{
+            display: grid;
+            width: 96vw;
+            height: 100vh;
+            grid-template-areas:'header header header' /*grid template areas é usada no counteiner pai.*/
+                                'main main aside'
+                                'main main aside'
+                                'footer footer footer';
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .item-01{
+            grid-area: header; /*O grid-area é usado nos itens ,sendo o valor um nome qualquer.*/
+            background-color:aquamarine;
+        }
+        .item-02{
+            grid-area:main;
+            background-color: bisque;
+        }
+        .item-03{
+            grid-area:aside;
+            background-color: burlywood;
+        }
+        .item-04{
+            grid-area:footer;
+            background-color: darkkhaki;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="counteiner">
+        <div class="box item-01">header</div>
+        <div class="box item-02">main</div>
+        <div class="box item-03">aside</div>
+        <div class="box item-04">footer</div>
+    </div>
+</body>
+</html>
