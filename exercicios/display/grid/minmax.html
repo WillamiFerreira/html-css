@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minmax</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;}
+        .counteiner{
+            display: grid;
+            width: 96vw;
+            height: 100vw;
+            margin: 5px;
+            gap:5px;
+            grid-template-columns: repeat(auto-fit, Minmax(200px,1fr));
+            grid-template-rows: repeat(3, 1fr);
+        }
+        .box{
+            background-color:blueviolet;
+            border-radius: 10px;
+            padding: 5px;
+        }
+        .item-01{
+            background-color: rgb(255, 145, 0);
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minmax</h1>
+    <p>Minmax pode ser usada como valor nas propriedades <em>grid-template-collums e rows</em> e grid-template-areas.</p>
+
+    <div class="counteiner">
+        <div class="box item-01">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptatem debitis optio vel esse sed, nihil, saepe tempore deleniti excepturi at, quidem temporibus dolor unde corrupti voluptas tenetur laboriosam assumenda!</div>
+        <div class="box item-02">texto 02</div>
+        <div class="box item-03">texto 03</div>
+        <div class="box item-04">texto 04</div>
+        <div class="box item-05">texto 05</div>
+        <div class="box item-06">texto 06</div>
+        <div class="box item-07">text 07</div>
+    </div>
+</body>
+</html>
